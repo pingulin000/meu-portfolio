@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Portfólio | Efraim Ribeiro Oliveira</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#contrate-me">Contrate-me</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#prjts">Projetos</a></li>
+                </ul>
+            </nav>
+            <div class="redes-sociais">
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="conteudo">
+                <h1>Olá, me chamo <span>Efraim</span>,</h1>
+                <h3>e sou um desenvolvedor web.</h3>
+               <a href="https://github.com/efraimribeirooliveira" target="_blank"><button>Projetos</button></a>
+            </div>
+            <i class='bx bx-down-arrow-alt' id="i-animation"></i>
+        </section>
+
+        <div class="container-sobre">
+            <section class="sobre" id="sobre">
+                <div class="text">
+                    <h3>Sobre mim</h3>
+                    <h1>Eu sou um Desenvolvedor Web.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officiis dolorem, ullam dolores vel dignissimos nihil ducimus saepe, consectetur omnis, consequuntur nostrum voluptate molestias odit. Magnam illo voluptas dolor! Debitis.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat minima pariatur harum aperiam reprehenderit consequatur minus, fuga est dolor. Tempore ipsum amet porro doloribus eius ex vitae quas at ratione?
+                    </p>
+                </div>
+                <img src="./img/homem-negro.png" alt="">
+            </section>
+            <section class="exp" id="experiencia">
+                    <div class="html">
+                        <i class='bx bxl-html5' style='color:#f04242'  ></i>
+                        <h3>HTML5</h3>
+                        <p>Lorem ipsum dolor sit amet <br> consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quo accusantium necessitatibus eveniet libero dignissimos fugiat maiores vel, consequatur, quod soluta saepe suscipit natus quibusdam eius perferendis itaque deserunt eos.</p>
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" >HTML <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                    <div class="css">
+                        <i class='bx bxl-css3' style='color:#2394ee'  ></i>
+                        <h3>CSS</h3>
+                        <p>Lorem ipsum dolor sit amet <br> consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quaerat corrupti doloribus laboriosam ratione obcaecati asperiores eligendi, deleniti ex accusamus explicabo ducimus pariatur dolore? Consequuntur necessitatibus et qui nulla magni.</p>
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">CSS <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+            
+                    <div class="js">
+                        <i class='bx bxl-javascript' style='color:#f6b122'  ></i>
+                        <h3>Java Script</h3>
+                        <p>Lorem ipsum dolor sit amet <br> consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium quisquam reprehenderit accusamus doloribus totam fugit iusto quae ab et quasi. Enim ducimus dolores cupiditate explicabo error sapiente cumque, distinctio deserunt!</p>
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank" >Java Script <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+            </section>
+
+            <section class="projetos" id="prjts">
+                <div class="proj1">
+                    <a href="#"><button>Ver</button></a>
+                    <h2>Projeto - 1</h2>
+                    <img src="./img/exemplo.png" alt="">
+                </div>
+                <div class="proj2">
+                    <a href="#"><button>Ver</button></a>
+                    <h2>Projeto - 2</h2>
+                    <img src="./img/exemplo.png" alt="">
+                </div>
+                <div class="proj3">
+                    <a href="#"><button>Ver</button></a>
+                    <h2>Projeto - 3</h2>
+                    <img src="./img/exemplo.png" alt="">
+                </div>
+            </section>
+        </div>
+</main>
+
+
+<footer>
+    <h1>CONTATO</h1>
+    <div class="footer-top">
+        <div class="contato">
+            <h2>Me envie uma mensagem</h2>
+            <div class="tel">
+                <i class='bx bx-phone' style='color:#ffffff'  ></i>
+                <span>+74 998079982</span>
+            </div>
+            <div class="email">
+                <i class='bx bx-envelope' style='color:#fffbfb'  ></i>
+                efraimtwofe20003131@gmail.com
+            </div>
+        </div>
+
+        <div class="form">
+            <form action="https://formsubmit.co/el/hevapa" method="POST"
+            data-form
+            >
+                <input type="text" name="nome" placeholder="Nome" id="iname"  minlength="3" maxlength="60" required>
+            
+                <input type="email" name="email" placeholder="Email" minlength="5" maxlength="60" required>
+            
+                <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+                <button type="submit" id="btn" data-button>Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    </footer>
+
+    <script src="index/"></script>
+</body>
+</html>

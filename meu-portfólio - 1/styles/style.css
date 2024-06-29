@@ -1,0 +1,489 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+a{text-decoration: none;}li{list-style: none;}
+
+::-webkit-scrollbar {width: 10px;background-color: transparent;}
+::-webkit-scrollbar-thumb{background-color: rgba(0, 0, 0, 0.562);border-radius: 10px;}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(33, 33, 33);
+}
+
+/* 
+                    |=================|
+                    |    NAVEGAÇÃO    |
+                    |=================|
+*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(26, 26, 26);
+    box-shadow: 0px 1px 10px 1px #000000;
+    height: 70px;
+    width: 100%;
+    padding: 0px 30px;
+    position: fixed;
+}
+
+#nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+#nav ul li a {
+    font-family: var(--poppins);
+    color: #bcbcbc;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+#nav ul li:hover {
+    transform: scale(1.1);
+}
+
+#nav ul li a:hover {
+    color: rgb(254, 135, 8);
+    background-color: #43413f;
+    border-radius: 5px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 17px;
+}
+
+.redes-sociais a i {
+    font-size: 1.6em;
+    color: #a0a0a0;
+}
+
+.redes-sociais a i:hover {
+color: rgb(254, 135, 8);
+}
+
+/* 
+                    |=================|
+                    |      INICIO     |
+                    |=================|
+*/
+
+#inicio {
+    background-image: url(../img/Vector-Mountain-4K.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo {
+    margin-left: 100px;
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: var(--poppins);
+}
+
+.conteudo h1 {
+    font-size: 3.7em;
+    color: white;
+}
+
+.conteudo h1 span {
+    color: #a48367;
+}
+
+.conteudo h3 {
+    font-weight: 400;
+    color: rgb(242, 242, 242);
+    font-size: 1.4em;
+}
+
+.conteudo button {
+    width: 45%;
+    margin-top: 20px;
+    padding: 13px;
+    border-radius: 10px;
+    border: 2px solid rgb(249, 249, 249);
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.conteudo button:hover {
+    background-color: rgba(128, 128, 128, 0.341);
+    transform: scale(1.1);
+}
+
+#i-animation {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    color: rgb(21, 18, 207);
+    font-size: 2em;
+    animation: ianimation 1.2s linear infinite;
+}
+
+@keyframes ianimation {
+    0% {
+        transform: translateY(0px);
+    } 50% {
+        transform: translateY(-10px);
+    } 100% {
+        transform: translateY(0px);
+    }
+    
+}
+
+/* 
+                    |=================|
+                    |       SOBRE     |
+                    |=================|
+*/
+main div.container-sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 60px;
+}
+
+
+.sobre {
+    margin: auto;
+    width: 1500px;
+    display: flex;
+    background-color: rgb(45, 45, 45);
+    
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.text h3 {
+    color: orange;
+    text-transform: uppercase;
+}
+
+.text h1 {
+    color: white;
+    font-size: 1.7em;
+    width: 80%;
+}
+
+.text p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: rgb(193, 191, 191);
+}
+
+.sobre img {
+    width: 50%;
+    height: 100%;
+    border-radius: 25px 0px 0px 25px;
+}
+
+/* 
+                    |=================|
+                    |   EXPERIÊNCIA   |
+                    |=================|
+*/
+
+.exp {
+    margin: auto;
+    background-color: rgb(45, 45, 45);
+    width: 1500px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.html, .css, .js {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px 60px;
+    border-radius: px;
+}
+
+.html, .js {
+    background-color: rgb(54, 54, 54);
+}
+
+.css {
+    background-image: linear-gradient(to top, rgb(97, 20, 20), rgb(192, 37, 37));
+}
+
+.bxl-html5, .bxl-css3, .bxl-javascript {
+    font-size: 3em;
+}
+
+.html p, .css p, .js p {
+    color: #a0a0a0;
+    width: 100%;
+}
+
+.html a {
+    color: brown;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 70px;
+}
+
+.js a {
+    color: brown;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 118px;
+}
+
+.css a {
+    color: rgb(194, 193, 193);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 58px;
+}
+
+.html a:hover,
+ .js a:hover {
+    color: red;
+ }
+
+.css a:hover {
+    color: white;
+} 
+
+div i {
+    font-size: 1.3em;
+}
+
+/* 
+                    |=================|
+                    |   CONTRATE-ME   |
+                    |=================|
+*/
+
+footer {
+    background-color: rgb(45, 45, 45);
+    margin-top: 60px;
+    padding: 30px;
+}
+
+footer h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 140px;
+    background-color: rgb(54, 54, 54);
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.contato h2 {
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+
+.footer-top .contato i {
+    background-image: linear-gradient(140deg, dodgerblue, rgb(29, 10, 136));
+    padding: 13px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+
+.form {
+    background-image: linear-gradient(140deg, rgb(18, 137, 255) , rgb(61, 13, 173));
+    width: 500px;
+    height: 350px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form form input {
+    background-color: rgb(0, 0, 54);
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
+    border: 0.125rem solid transparent;
+    color: white;
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form form input::placeholder, textarea::placeholder {
+    color: rgb(114, 113, 113);
+    font-family: var(--poppins);
+    font-weight: 500;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    outline: none;
+    border-color: #1d90f5;
+    box-shadow: 0 0 0 0.125rem #26344a;  
+}
+
+.form form textarea {
+    background-color: rgb(0, 0, 54);
+    width: 100%;
+    min-height: 160px;
+    resize: none;
+    padding: 12px;
+    border-radius: 5px;
+    border: 0.125rem solid transparent;
+    color: white;
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form form #btn {
+    font-family: var(--poppins);
+    font-weight: 600;
+    background-color: rgb(0, 0, 54);
+    color: white;
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.form form #btn:hover,
+.form form #btn:focus {
+    outline: none;
+    background-color: rgb(20, 20, 83)
+}
+
+.form form #btn:disabled {
+    cursor: not-allowed;
+    background-color: #555b69;
+}
+
+.sucess,
+.error {
+    text-align: center;
+}
+
+.success {
+    color: greenyellow;
+    position: relative;
+    top: 140px;
+}
+
+.error {
+    color: tomato;
+}
+
+.projetos {
+    width: 1500px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2d2d2d;
+    margin: auto;
+}
+
+.proj1,
+.proj2,
+.proj3 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #363636;
+    width: 30%;
+    padding: 30px;
+}
+
+.projetos button {
+    background-color: rgba(233, 233, 233, 0.349);
+    color: rgb(255, 255, 255);
+    font-family: var(--poppins);
+    font-weight: 600;
+    padding: 10px 45px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 290px;
+    cursor: pointer;
+
+}
+
+.projetos button:hover {
+    background-color: rgba(243, 243, 243, 0.486);
+}
+
+.projetos h2 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.projetos img {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 8px groove black;
+    background-color: rgba(17, 17, 17, 0.712);
+}
+
+.projetos img:hover {
+    scale: 1.1;
+}
